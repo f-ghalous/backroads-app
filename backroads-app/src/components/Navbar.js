@@ -1,14 +1,12 @@
 import React from 'react'
+import logo from '../images/logo.svg'
 
 function Navbar() {
   return (
     <nav classNameName="navbar">
       <div classNameName="nav-center">
         <div classNameName="nav-header">
-          <img
-            src="./images/logo.svg"
-            classNameName="nav-logo"
-            alt="backroads"
+          <img src={logo} classNameName="nav-logo" alt="backroads"
           />
           <button type="button" className="nav-toggle" id="nav-toggle">
             <i className="fas fa-bars"></i>
