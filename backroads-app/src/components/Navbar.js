@@ -27,10 +27,14 @@ function Navbar() {
 
         <ul class="nav-icons">
           {socialLinks.map((link) => {
+            const {id, href, icon} = link;
             return (
-              <li key={link.id}>
-                <a href={link.href} target="_blank" class="nav-icon">
-                  <i class={link.icon}></i>
+              <li key={id}>
+                <a href={href} 
+                target="_blank" 
+                rel="noopener"
+                class="nav-icon">
+                  <i class={icon}></i>
                 </a>
               </li>
             )
