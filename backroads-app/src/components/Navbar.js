@@ -1,74 +1,45 @@
 import React from 'react'
 import logo from '../images/logo.svg'
+import { pageLinks } from '../data'
 
 function Navbar() {
   return (
-    <nav classNameName="navbar">
-      <div classNameName="nav-center">
-        <div classNameName="nav-header">
-          <img src={logo} classNameName="nav-logo" alt="backroads"
-          />
-          <button type="button" className="nav-toggle" id="nav-toggle">
-            <i className="fas fa-bars"></i>
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <img src="./images/logo.svg" class="nav-logo" alt="backroads" />
+          <button type="button" class="nav-toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
           </button>
         </div>
         {/* <!-- left this comment on purpose --> */}
-        <ul className="nav-links" id="nav-links">
-          <li>
-            <a href="#home" className="nav-link">
-              {' '}
-              home{' '}
-            </a>
-          </li>
-
-          <li>
-            <a href="#about" className="nav-link">
-              {' '}
-              about{' '}
-            </a>
-          </li>
-
-          <li>
-            <a href="#services" className="nav-link">
-              {' '}
-              services{' '}
-            </a>
-          </li>
-
-          <li>
-            <a href="#tours" className="nav-link">
-              {' '}
-              tours
-            </a>
-          </li>
+        <ul class="nav-links" id="nav-links">
+          {pageLinks.map((link)=>{
+            return (
+              <li key={link.id}>
+                <a href={link.href} class="nav-link">
+               {link.text}
+                </a>
+              </li>
+            )
+          })}
+         
         </ul>
 
-        <ul className="nav-icons">
+        <ul class="nav-icons">
           <li>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              className="nav-icon"
-            >
-              <i className="fab fa-facebook"></i>
+            <a href="https://www.twitter.com" target="_blank" class="nav-icon">
+              <i class="fab fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              className="nav-icon"
-            >
-              <i className="fab fa-twitter"></i>
+            <a href="https://www.twitter.com" target="_blank" class="nav-icon">
+              <i class="fab fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              className="nav-icon"
-            >
-              <i className="fab fa-squarespace"></i>
+            <a href="https://www.twitter.com" target="_blank" class="nav-icon">
+              <i class="fab fa-squarespace"></i>
             </a>
           </li>
         </ul>
