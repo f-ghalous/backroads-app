@@ -3,9 +3,9 @@ import { infoTour } from '../data1'
 
 const Feature = () => {
   return (
-    <article className="tour-card">
+    <div>
       {infoTour.map((tour) => (
-        <div key={tour.id} className="tour-item">
+        <article key={tour.id} className="tour-card">
           <div className="tour-img-container">
             <img src={tour.imgTour} className="tour-img" alt="" />
             <p className="tour-date">{tour.date}</p>
@@ -26,9 +26,9 @@ const Feature = () => {
               <p>from ${tour.price}</p>
             </div>
           </div>
-        </div>
+        </article>
       ))}
-    </article>
+    </div>
   )
 }
 

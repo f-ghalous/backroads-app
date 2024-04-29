@@ -12,7 +12,7 @@ const Tours = () => {
       <Title title="featured" subTitle="tours" />
       <Feature/>
 
-      {/* <div className="section-center featured-center"> */}
+      <div className="section-center featured-center">
         {/* <article className="tour-card">
           <div className="tour-img-container">
             <img src={imgTour1} className="tour-img" alt="" />
@@ -113,8 +113,8 @@ const Tours = () => {
               <p>from $3300</p>
             </div>
           </div>
-        </article>
-      </div> */}
+  </article>*/}
+      </div> 
     </section>
   )
 }
