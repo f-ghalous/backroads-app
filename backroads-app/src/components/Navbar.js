@@ -13,7 +13,7 @@ function Navbar() {
             <i class="fas fa-bars"></i>
           </button>
         </div>
-        <PageLinks parentclasse={'nav-links'} itemClasse={'nav-links'} />
+        <PageLinks parentclasse='nav-links' itemClasse='nav-link' />
         <SocialLinks parentClasse={'nav-icons'} itemClasse={'nav-icon'} />
       </div>
     </nav>
