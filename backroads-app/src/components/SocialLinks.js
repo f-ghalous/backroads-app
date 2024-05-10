@@ -1,25 +1,15 @@
 import React from 'react'
 import { socialLinks } from '../data'
-import SocialLink from './socialLink'
+import SocialLink1 from './SocialLink1'
 
 
 const SocialLinks = ({ parentClasse, itemClasse }) => {
   return (
     <ul className={parentClasse}>
       {socialLinks.map((link) => {
-        const { href, icon, id } = link
         return (
-          <SocialLink key={link.id} {...link} itemClasse={itemClasse}/>
-          // <li key={id}>
-          //   <a
-          //     href={href}
-          //     target="_blank"
-          //     rel="noopener"
-          //     className={itemClasse}
-          //   >
-          //     <i className={icon}></i>
-          //   </a>
-          // </li>
+          <SocialLink1 key={link.id} {...link} itemClasse={itemClasse} />
+       
         )
       })}
     </ul>
