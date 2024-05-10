@@ -1,5 +1,6 @@
 import React from 'react'
 import { socialLinks } from '../data'
+import SocialLink from './socialLink'
 
 
 const SocialLinks = ({ parentClasse, itemClasse }) => {
@@ -8,16 +9,17 @@ const SocialLinks = ({ parentClasse, itemClasse }) => {
       {socialLinks.map((link) => {
         const { href, icon, id } = link
         return (
-          <li key={id}>
-            <a
-              href={href}
-              target="_blank"
-              rel="noopener"
-              className={itemClasse}
-            >
-              <i className={icon}></i>
-            </a>
-          </li>
+          <SocialLink key={link.id} {...link} itemClasse={itemClasse}/>
+          // <li key={id}>
+          //   <a
+          //     href={href}
+          //     target="_blank"
+          //     rel="noopener"
+          //     className={itemClasse}
+          //   >
+          //     <i className={icon}></i>
+          //   </a>
+          // </li>
         )
       })}
     </ul>
