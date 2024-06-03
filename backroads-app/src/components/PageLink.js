@@ -1,10 +1,10 @@
 import React from 'react'
 
-const PageLink = ({ href, text, itemClasse}) => {
+const PageLink = ({ link, itemClasse}) => {
   return (
     <li>
-      <a href={href} class={itemClasse}>
-        {text}
+      <a href={link.href} class={itemClasse}>
+        {link.text}
       </a>
     </li>
   )
