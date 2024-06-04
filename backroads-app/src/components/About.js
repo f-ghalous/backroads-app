@@ -4,7 +4,7 @@ import Title from './Title'
 
 const About = () => {
   return (
-    <section className="section" id="about">
+    <section className ="section" id="about">
       <Title title= 'about' subTitle='us' />
      
 
@@ -28,7 +28,7 @@ const About = () => {
             quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
             unde dolor?
           </p>
-          <a href="#" className="btn">
+          <a href="#about" className="btn">
             read more
           </a>
         </article>
